@@ -226,13 +226,15 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 ### The analysis should contain the following:
 
 1. **Four DataFrames are created, one for each city on the itinerary** 
-* Explain the purpose of the new analysis:
+Explain the purpose of the new analysis:
 
-    > The purpose of this written report for Data Analyst at PyBer is to create a complete summary of the Ride-Sharing data by city type. Including a quick summary of line, bar, scatter, bubble, pie, and box-and-whisker plots using Matplotlib libraries. And determine mean, median, and mode using Pandas, NumPy, and SciPy statistics. Our Final Analysis include multiple-line graphs of total weekly fares for each city type.
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 2. **The latitude and longitude pairs for each of the four cities are retrieved.** 
-* Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types:
+Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types:
   
 **Code and Image**
 
