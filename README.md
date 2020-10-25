@@ -43,15 +43,10 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
  
 ### Results with detail analysis:
 
-**1. The total number of rides for each city type is retrieved.**
+**1. Retrieve all of the following information from the API call.**
 
-> Image with `Jupyter Notebook` & `Python` Code below.
 
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.1.PNG?raw=true)
-
-**2. The total number of drivers for each city type is retrieved.**
+**1.i. Latitude and longitude.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -59,7 +54,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.2.PNG?raw=true)
 
-**3. The sum of the fares for each city type is retrieved.**
+**1.ii. Maximum temperature.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -67,7 +62,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.3.PNG?raw=true)
 
-**4. The average fare per ride for each city type is calculated.**
+**1.iii. Percent humidity.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -75,7 +70,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.4.PNG?raw=true)
 
-**5. The average fare per driver for each city type is calculated.**
+**1.iv. Percent cloudiness.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -83,7 +78,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.5.PNG?raw=true)
 
-**6. A PyBer summary DataFrame is created.**
+**1.v. Wind speed.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -91,7 +86,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.6.PNG?raw=true)
 
-**7. The PyBer summary DataFrame is formatted as shown in the example.**
+**1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -100,20 +95,42 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
 
 
+**2. Add the weather data to a new DataFrame.**
 
-### Deliverable 2: A multiple-line chart of total fares for each city type
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
+
+
+**3. Export the DataFrame as `WeatherPy_Database.csv` into the Weather_Database folder**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
+
+### Deliverable 2: Create a Customer Travel Destinations Map.
+Use input statements to retrieve customer weather preferences, then use those preferences to identify potential travel destinations and nearby hotels. Then, show those destinations on a marker layer map with pop-up markers.
+
 ### Deliverable Requirements:
 
-1. A DataFrame was created using the `groupby()` function on the "type" and "date" columns, and the `sum()` method is applied on the "fare" column to show the total fare amount for each date and time.
-2. A DataFrame was created using the `pivot()` function where the index is the "date," the columns are the city "type," and the values are the "fare."
-3. A DataFrame was created using the `loc` method on the date range: 2019-01-01 through 2019-04-29.
-4. A DataFrame was created using the `resample()` function in weekly bins and shows the sum of the fares for each week.
-5. An annotated chart showing the total fares by city type is created and saved to the "analysis" folder. 
-
+1. Input statements are written to prompt the customer for their minimum and maximum temperature preferences.
+2. A new DataFrame is created based on the minimum and maximum temperature, and empty rows are dropped.
+3. The hotel name is retrieved and added to the DataFrame, and the rows that don’t have a hotel name are dropped.
+4. The DataFrame is exported as a CSV file into the Vacation_Search folder and is saved as `WeatherPy_vacation.csv`.
+5. A marker layer map with pop-up markers for the cities in the vacation DataFrame is created, and it is uploaded as a PNG. Each marker has the following information:
+    1. Hotel name
+    2. City
+    3. Country
+    4. Current weather description with the maximum temperature
+6. The marker layer map is saved and uploaded to the Vacation_Search folder as `WeatherPy_vacation_map.png`.
 
 ### Results with detail analysis:
 
-**1. A DataFrame was created using the `groupby()` function on the "type" and "date" columns, and the `sum()` method is applied on the "fare" column to show the total fare amount for each date and time.**
+**1. Input statements are written to prompt the customer for their minimum and maximum temperature preferences.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -121,7 +138,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.1.PNG?raw=true)
 
-**2. A DataFrame was created using the `pivot()` function where the index is the "date," the columns are the city "type," and the values are the "fare."**
+**2. A new DataFrame is created based on the minimum and maximum temperature, and empty rows are dropped."**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -129,7 +146,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.2.PNG?raw=true)
 
-**3. A DataFrame was created using the `loc` method on the date range: 2019-01-01 through 2019-04-29.**
+**3. The hotel name is retrieved and added to the DataFrame, and the rows that don’t have a hotel name are dropped.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -137,7 +154,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.3.PNG?raw=true)
 
-**4. A DataFrame was created using the `resample()` function in weekly bins and shows the sum of the fares for each week.**
+**4. The DataFrame is exported as a CSV file into the Vacation_Search folder and is saved as `WeatherPy_vacation.csv`.**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -145,7 +162,34 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.4.PNG?raw=true)
 
-**5. An annotated chart showing the total fares by city type is created and saved to the "analysis" folder.**
+**5. A marker layer map with pop-up markers for the cities in the vacation DataFrame is created, and it is uploaded as a PNG. Each marker has the following information:**
+
+
+**5.i. Hotel name**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.ii. City**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.iii. Country**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.iv. Current weather description with the maximum temperature**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
@@ -154,17 +198,27 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
 
 
+**6. The marker layer map is saved and uploaded to the Vacation_Search folder as `WeatherPy_vacation_map.png`.**
 
-## Deliverable 3: A written report for the PyBer Analysis
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+
+## Deliverable 3: Create a Travel Itinerary Map
+Use the Google Directions API to create a travel itinerary that shows the route between four cities chosen from the customer’s possible travel destinations. Then, create a marker layer map with a pop-up marker for each city on the itinerary.
+
 ### The analysis should contain the following:
 
-1. **Overview of the analysis** 
+1. **Four DataFrames are created, one for each city on the itinerary** 
 * Explain the purpose of the new analysis:
 
     > The purpose of this written report for Data Analyst at PyBer is to create a complete summary of the Ride-Sharing data by city type. Including a quick summary of line, bar, scatter, bubble, pie, and box-and-whisker plots using Matplotlib libraries. And determine mean, median, and mode using Pandas, NumPy, and SciPy statistics. Our Final Analysis include multiple-line graphs of total weekly fares for each city type.
 
 
-2. **Results** 
+2. **The latitude and longitude pairs for each of the four cities are retrieved.** 
 * Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types:
 
     > * The Suburban fares started around $1,000, and the analysis was not profitable, fare dropped in March and in mid-April.  
@@ -180,7 +234,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
      > PyBer Ride-Sharing Data (2019), 
     ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig1.png?raw=true)      
 
-3. **Summary** 
+3. **A directions layer map between the cities and the travel map is created and uploaded as `WeatherPy_travel_map.png`.** 
 * Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types:
 
     > **1)** From our analysis, we can predict that there are good opportunities to expand the business in rural and suburban cities, including hiring drivers to operate and explode business in rural and suburban cities.
@@ -188,15 +242,49 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
     > % of Total Drivers by City Type,
     ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig7.png?raw=true)
     
-    > **2)** The Urban cities fare is the highest and consistent, giving us great and new business opportunities to expand rides.  
 
-    > % of Total Fares by City Type, 
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig5.png?raw=true)
+ 4. **A DataFrame that contains the `four` cities on the itinerary is created.** 
+* Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types:
+
+    > **1)** From our analysis, we can predict that there are good opportunities to expand the business in rural and suburban cities, including hiring drivers to operate and explode business in rural and suburban cities.
+
+    > % of Total Drivers by City Type,
+    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig7.png?raw=true)
     
-    > **3)** The Rural cities fare is the lowest of the other two city types (Urban and Suburban cities), in addition, fares never intersect.  Knowing that all fares never intersect, we can expand fares and increase business financial income to the company without affecting our rate.
-
-     > Total Fare by City Type,
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png?raw=true) 
+ **5. A marker layer map with a pop-up marker for the cities on the itinerary is created, and it is uploaded as `WeatherPy_travel_map_markers.png`. Each marker has the following information:**
 
 
-#### PyBer Analysis Completed by Emmanuel Martinez
+**5.i. Hotel name**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.ii. City**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.iii. Country**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+**5.iv. Current weather description with the maximum temperature**
+
+> Image with `Jupyter Notebook` & `Python` Code below.
+
+**Code and Image**
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+
+
+#### World Weather Analysis Completed by Emmanuel Martinez
