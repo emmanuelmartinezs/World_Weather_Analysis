@@ -210,6 +210,19 @@ Use input statements to retrieve customer weather preferences, then use those pr
 ## Deliverable 3: Create a Travel Itinerary Map
 Use the Google Directions API to create a travel itinerary that shows the route between four cities chosen from the customer’s possible travel destinations. Then, create a marker layer map with a pop-up marker for each city on the itinerary.
 
+### Deliverable Requirements:
+
+1. Four DataFrames are created, one for each city on the itinerary. 
+2. The latitude and longitude pairs for each of the four cities are retrieved. 
+3. A directions layer map between the cities and the travel map is created and uploaded as `WeatherPy_travel_map.png`. 
+4. A DataFrame that contains the four cities on the itinerary is created.
+5. A marker layer map with a pop-up marker for the cities on the itinerary is created, and it is uploaded as `WeatherPy_travel_map_markers.png`. Each marker has the following information: 
+    1. Hotel name
+    2. City
+    3. Country
+    4. Current weather description with the maximum temperature
+
+
 ### The analysis should contain the following:
 
 1. **Four DataFrames are created, one for each city on the itinerary** 
