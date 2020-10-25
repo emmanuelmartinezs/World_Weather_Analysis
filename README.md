@@ -52,7 +52,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.2.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **1.ii. Maximum temperature.**
 
@@ -60,7 +60,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.3.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **1.iii. Percent humidity.**
 
@@ -68,7 +68,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.4.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **1.iv. Percent cloudiness.**
 
@@ -76,7 +76,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **1.v. Wind speed.**
 
@@ -84,7 +84,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.6.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
 
@@ -92,7 +92,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 **2. Add the weather data to a new DataFrame.**
@@ -101,7 +101,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 **3. Export the DataFrame as `WeatherPy_Database.csv` into the Weather_Database folder**
@@ -110,7 +110,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 ### Deliverable 2: Create a Customer Travel Destinations Map.
 Use input statements to retrieve customer weather preferences, then use those preferences to identify potential travel destinations and nearby hotels. Then, show those destinations on a marker layer map with pop-up markers.
@@ -136,7 +136,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.1.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **2. A new DataFrame is created based on the minimum and maximum temperature, and empty rows are dropped."**
 
@@ -144,7 +144,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.2.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **3. The hotel name is retrieved and added to the DataFrame, and the rows that don’t have a hotel name are dropped.**
 
@@ -152,7 +152,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.3.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **4. The DataFrame is exported as a CSV file into the Vacation_Search folder and is saved as `WeatherPy_vacation.csv`.**
 
@@ -160,7 +160,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.4.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5. A marker layer map with pop-up markers for the cities in the vacation DataFrame is created, and it is uploaded as a PNG. Each marker has the following information:**
 
@@ -171,7 +171,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.ii. City**
 
@@ -179,7 +179,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.iii. Country**
 
@@ -187,7 +187,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.iv. Current weather description with the maximum temperature**
 
@@ -195,7 +195,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 **6. The marker layer map is saved and uploaded to the Vacation_Search folder as `WeatherPy_vacation_map.png`.**
@@ -204,7 +204,7 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 ## Deliverable 3: Create a Travel Itinerary Map
@@ -233,36 +233,26 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 
 2. **The latitude and longitude pairs for each of the four cities are retrieved.** 
 * Using images from the summary DataFrame and multiple-line chart, describe the differences in ride-sharing data among the different city types:
+  
+**Code and Image**
 
-    > * The Suburban fares started around $1,000, and the analysis was not profitable, fare dropped in March and in mid-April.  
-    > * The Rural fares started at around $200, the analysis shows fares increase and dropped till the end of April.  
-    > * The Urban fares start with an average of $1,800 with a consistent increase around 2,300. 
-    
-    > The PyBer summary DataFrame, 
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/1.7.PNG?raw=true)
-
-     > A multiple-line chart of total fares for each city type,
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
-
-     > PyBer Ride-Sharing Data (2019), 
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig1.png?raw=true)      
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+   
 
 3. **A directions layer map between the cities and the travel map is created and uploaded as `WeatherPy_travel_map.png`.** 
-* Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types:
+types:
+  
+**Code and Image**
 
-    > **1)** From our analysis, we can predict that there are good opportunities to expand the business in rural and suburban cities, including hiring drivers to operate and explode business in rural and suburban cities.
-
-    > % of Total Drivers by City Type,
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig7.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
     
 
  4. **A DataFrame that contains the `four` cities on the itinerary is created.** 
-* Based on the results, provide three business recommendations to the CEO for addressing any disparities among the city types:
+types:
+  
+**Code and Image**
 
-    > **1)** From our analysis, we can predict that there are good opportunities to expand the business in rural and suburban cities, including hiring drivers to operate and explode business in rural and suburban cities.
-
-    > % of Total Drivers by City Type,
-    ![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/analysis/Fig7.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
     
  **5. A marker layer map with a pop-up marker for the cities on the itinerary is created, and it is uploaded as `WeatherPy_travel_map_markers.png`. Each marker has the following information:**
 
@@ -273,7 +263,7 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.ii. City**
 
@@ -281,7 +271,7 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.iii. Country**
 
@@ -289,7 +279,7 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 **5.iv. Current weather description with the maximum temperature**
 
@@ -297,7 +287,7 @@ Use the Google Directions API to create a travel itinerary that shows the route 
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 #### World Weather Analysis Completed by Emmanuel Martinez
