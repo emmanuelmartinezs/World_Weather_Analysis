@@ -4,13 +4,15 @@
 Create line, bar, scatter, bubble, pie, and box-and-whisker plots using Matplotlib. And determine mean, median, and mode using Pandas, NumPy, and SciPy statistics.
 
 ## Overview of Project
-PyBer CEO has given you and your manager a brand-new assignment. Using your Python skills and knowledge of Pandas, you’ll create a summary DataFrame of the ride-sharing data by city type. Then, using Pandas and Matplotlib, you’ll create a multiple-line graph that shows the total weekly fares for each city type. 
+Jack loves the PlanMyTrip app. Beta testers love it too. And, as with any new product, they’ve recommended a few changes to take the app to the next level. Specifically, they recommend adding the weather description to the weather data you’ve already retrieved in this module. Then, you'll have the beta testers use input statements to filter the data for their weather preferences, which will be used to identify potential travel destinations and nearby hotels. From the list of potential travel destinations, the beta tester will choose four cities to create a travel itinerary. Finally, using the Google Maps Directions API, you will create a travel route between the four cities as well as a marker layer map. 
 
-> Finally, you’ll submit a written report that summarizes how the data differs by city type and how those differences can be used by decision-makers at PyBer.
+> This new assignment consists of three technical analyses. You will submit the following deliverables:
 
-1. ***Deliverable 1***: A ride-sharing summary DataFrame by city type
-2. ***Deliverable 2***: A multiple-line chart of total fares for each city type
-3. ***Deliverable 3***: A written report for the PyBer analysis [`README.md`](https://github.com/emmanuelmartinezs/PyBer_Analysis). 
+1. ***Deliverable 1***: Retrieve Weather Data
+2. ***Deliverable 2***: Create a Customer Travel Destinations Map
+3. ***Deliverable 3***: Create a Travel Itinerary Map
+
+Including a [`README.md`](https://github.com/emmanuelmartinezs/PyBer_Analysis). 
 
 ## Resources and Before Start Notes:
 
@@ -20,93 +22,24 @@ PyBer CEO has given you and your manager a brand-new assignment. Using your Pyth
 
 For more information, read the [`Documentation on Python data typess`](https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-complex). 
 
-## Check the Version of Matplotlib
-Before we get started on any project, it's good practice to make sure we have the latest version of the software we'll be using. Because we'll be using Matplotlib, let's check to make sure we have version 3.1.0 or greater
-Follow the instructions below for your operating system.
 
-**Check the Version on the Command Line in macOS or Windows**
-To begin, launch the command line and activate the PythonData environment.
+## Deliverable 1:  Retrieve Weather Data
+Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest city, and perform an API call with the OpenWeatherMap. In addition to the city weather data you gathered in this module, use your API skills to retrieve the current weather description for each city. Then, create a new DataFrame containing the updated weather data.
 
-To activate the **PythonData** environment on the command line, type `conda activate PythonData`.
-
-**macOS look similar to this:**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/Pyvr1.PNG?raw=true)
-
-
-**Windows look similar to this:**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/Pyvr2.PNG?raw=true)
-
-
-At the Python prompt ( >>>), type import matplotlib and press Enter to import Matplotlib.
-
-Next, to check the version of Matplotlib, type `matplotlib.__version__` (there are two underscores before and after "version") and press Enter
-The output should be 3.1.0 or greater.
-
-**Extra Note:** 
-
-To update Matplotlib for your development environment; with your PythonData environment activated, type `conda install -c conda-forge matplotlib` at the command prompt and press Enter.
-
-In Jupyter Notebook, create a new file if one hasn't been created. Add the following code to a new cell.
-
-**Check the Version in Jupyter Notebook**
-Alternatively, you can check the version of Matplotlib in Jupyter Notebook. To do that, follow these directions
-
-To start Jupyter Notebook, navigate to the Class folder on your computer using the command line or Anaconda prompt.
-
-Activate the PythonData environment if it's not activated. Type and run `jupyter notebook`.
-
-**From Anaconda Terminal:**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/jpvr1.PNG?raw=true)
-
-**From Jupyter Notebook Data:**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/jpvr2.PNG?raw=true)
-
-
-For more information about the latest Matplotlib version, see the Matplotlib documentation [Links to an external site.](https://matplotlib.org/3.1.0/index.html). 
-
-
-**Matplot over Jupyter Note:**
-Here a Simple Example how it looks a `Matplotlib.pyplot` chart:
-
-**Code and Graph**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/chartsample1.PNG?raw=true)
-
-
-
-**Annotate Charts Using the MATLAB Method**
-Here are a few methods that you can use to annotate charts using the MATLAB method:
-
-It is highly recommended to add x-axis and y-axis labels and a title to every graph you create so the viewer knows what it conveys. If you have more than one line or bar on a graph, making each line or bar stand out with a distinct color or line style is helpful, as is adding a legend for each dataset that the lines or bars represent. In addition, thoughtfully setting your x-axis and y-axis ranges can make the data more appealing.
-
-**Matplotlib Functions and Feature**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/MatplotlibFunc.PNG?raw=true)
-
-
-**Extra Note: Create a Vertical Bar Chart**
-
-To create a bar chart using the object-oriented interface method, use the `ax.bar()` function and add the x and y data parameters inside the parentheses.
-
-**Matplotlib Functions and Feature**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/PyBer_Analysis/blob/main/Resources/Images/VertBarChartExample.PNG?raw=true)
-
-
-## Deliverable 1:  A Ride-Sharing Summary DataFrame by City Type
 ### Deliverable Requirements:
 
-1. The total number of rides for each city type is retrieved. 
-2. The total number of drivers for each city type is retrieved.
-3. The sum of the fares for each city type is retrieved.
-4. The average fare per ride for each city type is calculated.  
-5. The average fare per driver for each city type is calculated. 
-6. A PyBer summary DataFrame is created.
-7. The PyBer summary DataFrame is formatted as shown in the example.
+1. Retrieve all of the following information from the API call:
+    * 1. Latitude and longitude
+    * 2. Maximum temperature
+    * 3. Percent humidity
+    * 4. Percent cloudiness
+    * 5. Wind speed
+    * 6. Weather description (for example, clouds, fog, light rain, clear sky)
+
+
+2. Add the weather data to a new DataFrame
+3. Export the DataFrame as WeatherPy_Database.csv into the Weather_Database folder
+
  
 ### Results with detail analysis:
 
