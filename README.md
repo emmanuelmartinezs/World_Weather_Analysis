@@ -29,12 +29,12 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 ### Deliverable Requirements:
 
 1. Retrieve all of the following information from the API call:
-    * 1. Latitude and longitude
-    * 2. Maximum temperature
-    * 3. Percent humidity
-    * 4. Percent cloudiness
-    * 5. Wind speed
-    * 6. Weather description (for example, clouds, fog, light rain, clear sky)
+    1. Latitude and longitude
+    2. Maximum temperature
+    3. Percent humidity
+    4. Percent cloudiness
+    5. Wind speed
+    6. Weather description (for example, clouds, fog, light rain, clear sky)
 
 
 2. Add the weather data to a new DataFrame
