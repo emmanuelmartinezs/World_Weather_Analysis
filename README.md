@@ -159,9 +159,12 @@ x_axis = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "O
 
 # Set the y-axis to a list of floats as the total fare in US dollars accumulated for each month.
 y_axis = [10.02, 23.24, 39.20, 35.42, 32.34, 27.04, 43.82, 10.56, 11.85, 27.90, 20.71, 20.09]
+
+# Create the plot
+plt.plot(x_axis, y_axis)
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/d1.PNG?raw=true)
 
 **1.ii. Maximum temperature.**
 
