@@ -113,6 +113,12 @@ Longitude and latitude lines intersect and form a geographic grid
 system across the Earth's
 surface.
 
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l6.png?raw=true)
+
+
+Now, after having our refresher on GCS, let's move to our Project!
+
+
 
 ## Deliverable 1:  Retrieve Weather Data
 Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest city, and perform an API call with the OpenWeatherMap. In addition to the city weather data you gathered in this module, use your API skills to retrieve the current weather description for each city. Then, create a new DataFrame containing the updated weather data.
