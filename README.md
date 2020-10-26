@@ -113,7 +113,7 @@ Longitude and latitude lines intersect and form a geographic grid
 system across the Earth's
 surface.
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l6.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l6.png =250x)
 
 
 Now, after having our refresher on GCS, let's move to our Project!
