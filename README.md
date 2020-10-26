@@ -113,7 +113,7 @@ Longitude and latitude lines intersect and form a geographic grid
 system across the Earth's
 surface.
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l6.png?raw=true){:height="250px" width="250px"}
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l6.png?raw=true)
 
 
 Now, after having our refresher on GCS, let's move to our Project!
@@ -148,6 +148,18 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 > Image with `Jupyter Notebook` & `Python` Code below.
 
 **Code and Image**
+
+
+````Python
+# with %, "magic" happens behind the scenes and sets the back-end processor used for charts.
+%matplotlib inline
+
+# Set the x-axis to a list of strings for each month.
+x_axis = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+# Set the y-axis to a list of floats as the total fare in US dollars accumulated for each month.
+y_axis = [10.02, 23.24, 39.20, 35.42, 32.34, 27.04, 43.82, 10.56, 11.85, 27.90, 20.71, 20.09]
+````
 
 ![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
