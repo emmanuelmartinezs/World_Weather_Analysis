@@ -69,6 +69,50 @@ Including a [`README.md`](https://github.com/emmanuelmartinezs/PyBer_Analysis).
 
 For more information, read the [`Documentation on Python data typess`](https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-complex). 
 
+## Review the Geographic Coordinate System
+
+We use the **geographic coordinate system (GCS)** to reference any point on Earth by its latitude and longitude coordinates.
+
+**Latitudes** are imaginary lines on Earth that run parallel east to west and are measured in angular units called degrees, minutes, and seconds, with 60 minutes in a degree and 60 seconds in a minute. Sometimes a latitude is referred to as a **parallel**. Consider, for example, the embattled 38th parallel (38° north) in East Asia that roughly demarcates North Korea and South Korea.
+
+The **equator** is an imaginary line around the middle of the earth that is equidistant from the North and South Poles and has a latitude of 0°. The equator splits Earth into Northern and Southern Hemispheres.
+
+Lines of latitude on Earth run east to west.
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l1.png?raw=true)
+
+All latitude lines above the equator are measured northward and considered positive, after 0° (the equator) and up to 90°, or 90° north (the North Pole). All latitude lines below the equator are measured southward and considered negative, before 0° (the equator) and down to –90°, or 90° south (the South Pole).
+
+The equator splits Earth into the Northern and Southern hemispheres, with positive north and negative south latitudes.
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l2.png?raw=true)
+
+**Longitudes** are imaginary lines on Earth that run from the North to the South Poles and are called ****meridians**. The **prime meridian** represents zero meridian, the origin for longitude coordinates, and splits Earth into the Eastern and Western Hemispheres.
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l3.png?raw=true)
+
+The prime meridian passes through Greenwich, England, from which longitude east and west is measured.
+
+The marker of the prime meridian in Greenwich,England
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l4.png?raw=true)
+
+All meridians east of the prime meridian are considered positive, after 0° and up to 180°. All meridians west of the prime meridian are considered negative, before 0° and down to –180°.
+
+The prime meridian splits Earth into the Eastern and Western
+hemispheres, with positive eastern and negative western
+longitudes.
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/l5.png?raw=true)
+
+All together, the lines of latitude (parallels) and longitude (meridians) make up a geographic grid, as if the Earth were wrapped in graph paper with intersecting horizontal and vertical lines mapping to specific locations.
+
+GCS makes it possible to pinpoint any place on Earth by providing its precise address, which is the intersection of its latitude and longitude lines.
+
+Longitude and latitude lines intersect and form a geographic grid
+system across the Earth's
+surface.
+
 
 ## Deliverable 1:  Retrieve Weather Data
 Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest city, and perform an API call with the OpenWeatherMap. In addition to the city weather data you gathered in this module, use your API skills to retrieve the current weather description for each city. Then, create a new DataFrame containing the updated weather data.
