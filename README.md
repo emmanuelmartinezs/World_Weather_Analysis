@@ -129,7 +129,7 @@ We'll generate random latitudes and longitudes to ensure coordinates are fairly 
 
 To generate random numbers, we can use the Python `random` module. This module is part of the Python and Anaconda installation, so we don't need to install it. Let's test some `random` module functions to find one that can help us.
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/rndfnc.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/rndfnc.PNG?raw=true)
 
 Now, after having our refresher on GCS, let's move to our Project!
 
