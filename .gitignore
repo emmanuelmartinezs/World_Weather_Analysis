@@ -2,9 +2,13 @@
 config.py
 
 # Adding additional files
-API_practice.ipynb
-random_numbers.ipynb
 Traversing_JSONs.ipynb
+
+# Other
+random_numbers.ipynb
+
+# Another
+API_practice.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
