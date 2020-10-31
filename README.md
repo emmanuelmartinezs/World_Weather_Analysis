@@ -277,7 +277,7 @@ city_data_df
 
 ````Python
 # Create the output file (CSV).
-output_data_file = "Weather_Database/cities.csv"
+output_data_file = "Weather_Database/WeatherPy_Database.csv"
 # Export the City_Data into a CSV.
 city_data_df.to_csv(output_data_file, index_label="City_ID")
 ````
