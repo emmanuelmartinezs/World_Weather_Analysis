@@ -311,9 +311,23 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
+
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# 3. Filter the city_data_df DataFrame using the input statements to create a new DataFrame using the loc method.
+
+# Ask the customer to add a minimum and maximum temperature value.
+min_temp = float(input("What is the minimum temperature you would like for your trip? "))
+max_temp = float(input("What is the maximum temperature you would like for your trip? "))
+
+
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.1.PNG?raw=true)
+
+
 
 **2. A new DataFrame is created based on the minimum and maximum temperature, and empty rows are dropped."**
 
@@ -321,7 +335,17 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# Filter the dataset to find the cities that fit the criteria.
+preferred_cities_df = city_data_df.loc[(city_data_df["Max Temp"] <= max_temp) & \
+                                       (city_data_df["Max Temp"] >= min_temp)]
+preferred_cities_df.head(10)
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.2.PNG?raw=true)
+
+
 
 **3. The hotel name is retrieved and added to the DataFrame, and the rows that don’t have a hotel name are dropped.**
 
@@ -329,7 +353,25 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# 4a. Determine if there are any empty rows.
+preferred_cities_df.notnull().sum()
+
+preferred_cities_df.count()
+
+preferred_cities_df.isnull().sum()
+
+# 4b. Drop any empty rows and create a new DataFrame that doesn’t have empty rows.
+preferred_cities_df.dropna()
+
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.3.PNG?raw=true)
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.3a.PNG?raw=true)
+
+
 
 **4. The DataFrame is exported as a CSV file into the Vacation_Search folder and is saved as `WeatherPy_vacation.csv`.**
 
@@ -337,42 +379,65 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
-**5. A marker layer map with pop-up markers for the cities in the vacation DataFrame is created, and it is uploaded as a PNG. Each marker has the following information:**
+````Python
+# 8a. Create the output File (CSV)
+# Create the output file (CSV).
+output_data_file = "Vacation_Search/WeatherPy_vacation.csv"
+
+# 8b. Export the City_Data into a csv
+hotel_df.to_csv(output_data_file, index_label="City_ID")
+
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.4.PNG?raw=true)
 
 
-**5.i. Hotel name**
 
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**5.ii. City**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**5.iii. Country**
+5. **A marker layer map with pop-up markers for the cities in the vacation DataFrame is created, and it is uploaded as a PNG. Each marker has the following information:**
+    1. Hotel name
+    2. City
+    3. Country
+    4. Current weather description with the maximum temperature
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
-**5.iv. Current weather description with the maximum temperature**
+````Python
+# 9. Using the template add city name, the country code, the weather description and maximum temperature for the city.
+info_box_template = """
+<dl>
+<dt>Hotel Name</dt><dd>{Hotel Name}</dd>
+<dt>City</dt><dd>{City}</dd>
+<dt>Country</dt><dd>{Country}</dd>
+<dt>Current Description</dt><dd>{Current Description}</dd>
+<dt>Max Temp</dt><dd>{Max Temp} °F</dd>
+</dl>
+"""
 
-> Image with `Jupyter Notebook` & `Python` Code below.
+# 10a. Get the data from each row and add it to the formatting template and store the data in a list.
+hotel_info = [info_box_template.format(**row) for index, row in hotel_df.iterrows()]
 
-**Code and Image**
+# 10b. Get the latitude and longitude from each row and store in a new DataFrame.
+locations = hotel_df[["Lat", "Lng"]]
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+# 11a. Add a marker layer for each city to the map. 
+max_temp = hotel_df["Max Temp"]
+fig = gmaps.figure(center=(30.0, 31.0), zoom_level=1.5)
+heat_layer = gmaps.heatmap_layer(locations, weights=max_temp,dissipating=False,
+             max_intensity=300, point_radius=4)
+marker_layer = gmaps.marker_layer(locations, info_box_content=hotel_info)
+fig.add_layer(heat_layer)
+fig.add_layer(marker_layer)
+
+# 11b. Display the figure
+fig
+
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.5.PNG?raw=true)
 
 
 **6. The marker layer map is saved and uploaded to the Vacation_Search folder as `WeatherPy_vacation_map.png`.**
@@ -381,7 +446,9 @@ Use input statements to retrieve customer weather preferences, then use those pr
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/2.6.PNG?raw=true)
+
+
 
 
 ## Deliverable 3: Create a Travel Itinerary Map

@@ -1,0 +1,110 @@
+City_ID,City,Country,Max Temp,Current Description,Lat,Lng,Hotel Name
+1,Rikitea,PF,75.24,clear sky,-23.12,-134.97,Rikitea
+7,Camalu,MX,82.99,scattered clouds,30.85,-116.07,Camalú
+12,Salalah,OM,77.0,clear sky,17.02,54.09,Salalah
+21,Alofi,NU,75.2,light rain,-19.06,-169.92,Alofi
+23,Bengkulu,ID,75.67,overcast clouds,-3.8,102.27,Bengkulu
+24,Puerto Ayacucho,VE,87.78,heavy intensity rain,5.66,-67.62,Puerto Ayacucho
+26,Kavieng,PG,82.99,light rain,-2.57,150.8,Kaewieng
+28,Davila,PH,77.0,broken clouds,18.47,120.58,Pasuquin
+29,Teahupoo,PF,84.2,few clouds,-17.83,-149.27,Teahupo'o
+31,Butaritari,KI,81.25,overcast clouds,3.07,172.79,Isles Sunset Lodge
+35,Hithadhoo,MV,83.57,light rain,-0.6,73.08,Addu City
+40,Beira,MZ,77.0,few clouds,-19.84,34.84,Beira
+42,Taoudenni,ML,81.77,overcast clouds,22.68,-3.98,Taoudenni
+55,Ahuimanu,US,81.0,few clouds,21.44,-157.84,Honolulu
+62,Kapaa,US,81.0,clear sky,22.08,-159.32,Kapaʻa
+63,Katherine,AU,82.4,clear sky,-14.47,132.27,Katherine
+66,Atuona,PF,78.55,few clouds,-9.8,-139.03,Atuona
+68,Marrakesh,MA,78.8,clear sky,31.63,-8.01,Marrakesh
+73,Garissa,KE,79.2,clear sky,-0.45,39.64,Garissa
+76,Portobelo,PA,84.99,overcast clouds,9.55,-79.65,Portobelo
+78,Soyo,AO,78.15,overcast clouds,-6.13,12.37,Soyo
+81,Buala,SB,81.37,broken clouds,-8.14,159.59,Buala
+94,Bahia Blanca,AR,80.28,clear sky,-38.72,-62.27,Bahía Blanca
+95,Nishihara,JP,75.2,shower rain,26.18,127.76,Naha
+96,Kulhudhuffushi,MV,82.72,broken clouds,6.62,73.07,Kulhudhuffushi
+101,Moron,AR,75.0,clear sky,-34.65,-58.62,Morón
+103,Georgetown,MY,75.2,few clouds,5.41,100.34,George Town
+104,Patrocinio,BR,78.8,overcast clouds,-18.94,-46.99,Patrocínio
+105,Meulaboh,ID,77.81,overcast clouds,4.14,96.13,Meulaboh
+108,Gurupi,BR,82.81,heavy intensity rain,-11.73,-49.07,Gurupi
+109,Coachella,US,88.0,clear sky,33.68,-116.17,Indio
+115,Adeje,ES,86.0,clear sky,28.12,-16.73,Costa Adeje
+118,Puerto Suarez,BO,86.0,few clouds,-18.95,-57.8,Puerto Suárez
+121,Abonnema,NG,77.0,few clouds,4.71,6.79,Degema
+128,Hervey Bay,AU,75.99,clear sky,-25.3,152.85,Hervey Bay
+131,Lampa,CL,88.0,clear sky,-33.28,-70.9,Lampa
+132,Yarada,IN,77.0,mist,17.65,83.27,Visakhapatnam
+133,Dakar,SN,78.8,clear sky,14.69,-17.44,Dakar
+135,Kavaratti,IN,82.36,clear sky,10.57,72.64,Kavaratti
+138,Sao Raimundo Das Mangabeiras,BR,83.52,moderate rain,-7.02,-45.48,São Raimundo das Mangabeiras
+143,Labuhan,ID,75.22,overcast clouds,-6.88,112.21,Musholla Babut Taubat
+144,San Patricio,US,78.8,scattered clouds,28.02,-97.52,Sinton
+145,Sao Paulo De Olivenca,BR,76.03,heavy intensity rain,-3.38,-68.87,Castro Alves
+151,Sibolga,ID,77.59,light rain,1.74,98.78,Sibolga
+152,Catamarca,AR,84.99,clear sky,-28.47,-65.79,Catamarca
+154,Ghanzi,BW,81.66,scattered clouds,-21.57,21.78,Ghanzi Farmhouse
+158,The Valley,AI,86.0,haze,18.22,-63.06,The Valley
+163,Hilo,US,84.2,scattered clouds,19.73,-155.09,Hilo
+167,Tarakan,ID,79.23,overcast clouds,3.3,117.63,Tarakan
+170,Phan Thiet,VN,75.97,overcast clouds,10.93,108.1,Phan Thiet
+173,Nuevo Progreso,MX,84.0,clear sky,23.17,-97.95,Sebastián Ríos
+174,Vicuna,CL,82.99,clear sky,-30.03,-70.71,Vicuña
+177,Vanimo,PG,77.88,scattered clouds,-2.67,141.3,Vanimo
+179,Pochutla,MX,89.01,scattered clouds,15.74,-96.47,Pochutla District
+181,Ixtapa,MX,87.01,clear sky,20.7,-105.2,Puerto Vallarta
+184,Pandan,PH,81.03,very heavy rain,14.05,124.17,Pandan
+186,Inirida,CO,82.99,light rain,3.87,-67.92,Inírida
+190,Auki,SB,79.83,broken clouds,-8.77,160.7,Auki
+199,Kieta,PG,80.01,light rain,-6.22,155.63,Kieta
+208,Bathsheba,BB,80.6,broken clouds,13.22,-59.52,Wilson Hill
+209,Kloulklubed,PW,84.43,moderate rain,7.04,134.26,Klouklubed
+216,Touros,BR,84.2,scattered clouds,-5.2,-35.46,Touros
+218,Pontes E Lacerda,BR,87.94,broken clouds,-15.23,-59.34,Centro
+219,Tanout,NE,80.8,clear sky,14.97,8.89,Tânout
+220,San Carlos De Bariloche,AR,80.6,clear sky,-41.15,-71.31,San Carlos de Bariloche
+227,Ugoofaaru,MV,82.78,scattered clouds,5.67,73.0,Ungoofaaru
+230,Okitipupa,NG,76.15,light rain,6.5,4.78,Okitipupa
+232,Reconquista,AR,76.46,clear sky,-29.15,-59.65,Reconquista
+234,Puerto Ayora,EC,77.0,broken clouds,-0.74,-90.35,Puerto Ayora
+237,Mongo,TD,88.7,scattered clouds,12.18,18.69,Mongo
+238,Qandala,SO,79.74,clear sky,11.47,49.87,Qandala
+241,Kidal,ML,82.0,broken clouds,18.44,1.41,Kidal
+242,Luwuk,ID,77.59,light rain,-0.95,122.79,Luwuk
+246,Tenosique,MX,75.2,overcast clouds,17.48,-91.43,Tenosique
+250,Teguise,ES,75.2,clear sky,29.06,-13.56,Teguise
+254,Cape Coast,GH,79.23,broken clouds,5.11,-1.25,Cape Coast
+255,Ayorou,NE,89.15,clear sky,14.73,0.92,Ayorou
+256,Manado,ID,77.0,few clouds,1.49,124.85,Manado
+257,Kudahuvadhoo,MV,82.85,scattered clouds,2.67,72.89,Kudahuvadhoo
+262,Howard Springs,AU,78.8,broken clouds,-12.5,131.05,Darwin
+263,Bosaso,SO,78.28,clear sky,11.28,49.18,Bosaso
+265,Brodowski,BR,82.4,broken clouds,-20.98,-47.66,Brodowski
+276,Jeremie,HT,84.7,light rain,18.65,-74.12,Jeremie
+278,Valle Hermoso,MX,81.0,few clouds,25.67,-97.83,Valle Hermoso
+280,Dhidhdhoo,MV,82.94,broken clouds,6.88,73.1,Dhidhdhoo
+281,Makakilo City,US,80.6,few clouds,21.35,-158.09,Kapolei
+283,Sola,VU,82.4,broken clouds,-13.88,167.55,Sola
+297,Sao Filipe,CV,80.28,broken clouds,14.9,-24.5,Sao Filipe
+299,Narasannapeta,IN,75.36,broken clouds,18.42,84.05,Narasannapeta
+304,Punta Cardon,VE,85.21,overcast clouds,11.66,-70.22,Punto Fijo
+305,Guerrero Negro,MX,80.08,overcast clouds,27.98,-114.06,Guerrero Negro
+314,Makaleng,BW,80.6,clear sky,-20.9,27.28,Makaleng
+333,Wewak,PG,79.47,overcast clouds,-3.55,143.63,Wewak
+334,Bontang,ID,76.32,overcast clouds,0.13,117.5,Bontang
+336,Mitsamiouli,KM,77.52,broken clouds,-11.38,43.28,Mitsamiouli
+338,Sinazongwe,ZM,81.59,clear sky,-17.26,27.46,Sinazongwe
+340,Samana,DO,82.4,broken clouds,19.21,-69.34,Samana
+341,Am Timan,TD,81.86,clear sky,11.03,20.28,Am Timan
+344,Bechem,GH,76.48,clear sky,7.09,-2.02,Bechem
+348,Tautira,PF,84.2,few clouds,-17.73,-149.15,Tautira
+350,Haapiti,PF,84.2,few clouds,-17.57,-149.87,Ha'apiti
+351,Providencia,MX,89.01,overcast clouds,28.72,-111.58,Distrito de Riego de Hermosillo
+352,Santa Isabel Do Rio Negro,BR,89.56,light rain,-0.41,-65.02,Santa Isabel do Rio Negro
+362,Sotouboua,TG,84.2,clear sky,8.57,0.98,Sotouboua
+363,Itarema,BR,81.82,overcast clouds,-2.92,-39.92,Itarema
+366,Abu Zabad,SD,83.98,clear sky,12.35,29.25,Abu Zabad
+375,Mulki,IN,78.8,mist,13.1,74.8,Karnad
+377,Grand-Santi,GF,89.67,broken clouds,4.25,-54.38,Grand-Santi
+378,Kilindoni,TZ,79.23,light rain,-7.91,39.67,Kilindoni
