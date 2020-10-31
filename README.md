@@ -155,13 +155,13 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
  
 ### Results with detail analysis:
 
-**1. Retrieve all of the following information from the API call.**
-    **1.i. Latitude and longitude.**
-    **1.ii. Maximum temperature.**
-    **1.iii. Percent humidity.**
-    **1.iv. Percent cloudiness.**
-    **1.v. Wind speed.**
-    **1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
+1. Retrieve all of the following information from the API call.
+    1. Latitude and longitude.**
+    2. Maximum temperature.**
+    3. Percent humidity.**
+    4. Percent cloudiness.**
+    5. Wind speed.**
+    6. Weather description (for example, clouds, fog, light rain, clear sky).**
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
