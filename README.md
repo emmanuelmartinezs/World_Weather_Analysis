@@ -162,7 +162,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
     **1.iv. Percent cloudiness.**
     **1.v. Wind speed.**
     **1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
-    
+
 > Image with `Jupyter Notebook` & `Python` Code below.
 
 **Code and Image**
@@ -251,7 +251,21 @@ print("-----------------------------")
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# New DF
+city_data_df = pd.DataFrame(city_data)
+city_data_df.head(10)
+
+# Reorder the column order
+new_column_order = ["City", "Country", "Lat","Lng", "Max Temp", "Humidity", "Cloudiness", "Wind Speed", "Current Description", "Date"]
+
+city_data_df = city_data_df[new_column_order]
+
+city_data_df
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/1.2.PNG?raw=true)
 
 
 **3. Export the DataFrame as `WeatherPy_Database.csv` into the Weather_Database folder**
@@ -260,7 +274,20 @@ print("-----------------------------")
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# Create the output file (CSV).
+output_data_file = "Weather_Database/cities.csv"
+# Export the City_Data into a CSV.
+city_data_df.to_csv(output_data_file, index_label="City_ID")
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/1.3.PNG?raw=true)
+
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/1.4.PNG?raw=true)
+
+
 
 ### Deliverable 2: Create a Customer Travel Destinations Map.
 Use input statements to retrieve customer weather preferences, then use those preferences to identify potential travel destinations and nearby hotels. Then, show those destinations on a marker layer map with pop-up markers.
