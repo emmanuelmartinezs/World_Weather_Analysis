@@ -156,70 +156,93 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
 ### Results with detail analysis:
 
 **1. Retrieve all of the following information from the API call.**
-
-
-**1.i. Latitude and longitude.**
-
+    **1.i. Latitude and longitude.**
+    **1.ii. Maximum temperature.**
+    **1.iii. Percent humidity.**
+    **1.iv. Percent cloudiness.**
+    **1.v. Wind speed.**
+    **1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
+    
 > Image with `Jupyter Notebook` & `Python` Code below.
 
 **Code and Image**
 
 
 ````Python
-# with %, "magic" happens behind the scenes and sets the back-end processor used for charts.
-%matplotlib inline
+# Create an empty list to hold the weather data.
+city_data = []
+# Print the beginning of the logging.
+print("Beginning Data Retrieval     ")
+print("-----------------------------")
 
-# Set the x-axis to a list of strings for each month.
-x_axis = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+# Create counters.
+record_count = 1
+set_count = 1
 
-# Set the y-axis to a list of floats as the total fare in US dollars accumulated for each month.
-y_axis = [10.02, 23.24, 39.20, 35.42, 32.34, 27.04, 43.82, 10.56, 11.85, 27.90, 20.71, 20.09]
+# Loop through all the cities in the list.
+for i, city in enumerate(cities):
 
-# Create the plot
-plt.plot(x_axis, y_axis)
+    # Group cities in sets of 50 for logging purposes.
+    if (i % 50 == 0 and i >= 50):
+        set_count += 1
+        record_count = 1
+
+    # Create endpoint URL with each city.
+    city_url = url + "&q=" + city.replace(" ","+")
+
+    
+    # Log the URL, record, and set numbers and the city.
+    print(f"Processing Record {record_count} of Set {set_count} | {city}")
+    
+    # Add 1 to the record count.
+    record_count += 1
+
+    # Run an API request for each of the cities.
+    try:
+    
+        # Parse the JSON and retrieve data.
+        city_weather = requests.get(city_url).json()
+        
+        # Parse out the needed data.
+        city_lat = city_weather["coord"]["lat"]
+        city_lng = city_weather["coord"]["lon"]
+        city_max_temp = city_weather["main"]["temp_max"]
+        city_humidity = city_weather["main"]["humidity"]
+        city_clouds = city_weather["clouds"]["all"]
+        city_wind = city_weather["wind"]["speed"]
+        city_country = city_weather["sys"]["country"]
+        city_description = city_weather["weather"][0]["description"]
+        
+        # Convert the date to ISO standard.
+        city_date = datetime.utcfromtimestamp(city_weather["dt"]).strftime('%Y-%m-%d %H:%M:%S')
+        
+        # Append the city information into city_data list.
+        city_data.append({"City": city.title(),
+                          "Lat": city_lat,
+                          "Lng": city_lng,
+                          "Max Temp": city_max_temp,
+                          "Humidity": city_humidity,
+                          "Cloudiness": city_clouds,
+                          "Wind Speed": city_wind,
+                          "Country": city_country,
+                          "Current Description": city_description,
+                          "Date": city_date})
+
+    # If an error is experienced, skip the city.
+    except:
+        print("City not found. Skipping...")
+        pass
+
+
+# Indicate that Data Loading is complete.
+print("-----------------------------")
+print("Data Retrieval Complete      ")
+print("-----------------------------") 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/d1.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/1.1.PNG?raw=true)
 
-**1.ii. Maximum temperature.**
 
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**1.iii. Percent humidity.**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**1.iv. Percent cloudiness.**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**1.v. Wind speed.**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**1.vi. Weather description (for example, clouds, fog, light rain, clear sky).**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
 
 
 **2. Add the weather data to a new DataFrame.**
