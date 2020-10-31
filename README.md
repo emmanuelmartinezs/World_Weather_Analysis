@@ -155,7 +155,7 @@ Generate a set of 2,000 random latitudes and longitudes, retrieve the nearest ci
  
 ### Results with detail analysis:
 
-**1. Retrieve all of the following information from the API call.**
+1. **Retrieve all of the following information from the API call.**
     1. Latitude and longitude.
     2. Maximum temperature.
     3. Percent humidity.
