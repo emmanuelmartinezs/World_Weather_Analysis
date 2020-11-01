@@ -545,7 +545,7 @@ fig
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/Images/WeatherPy_travel_map.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map.PNG?raw=true)
     
 
  4. **A DataFrame that contains the `four` cities on the itinerary is created.** 
@@ -599,7 +599,7 @@ fig.add_layer(marker_layer)
 fig
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/Images/WeatherPy_travel_map_markers.png?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map_markers.PNG?raw=true)
 
 
 #### World Weather Analysis Completed by Emmanuel Martinez
