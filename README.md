@@ -474,7 +474,27 @@ Explain the purpose of the new analysis:
 
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# Start Vacation at:
+
+vacation_start = mexico_vacation_df.loc[(mexico_vacation_df["City_ID"] == stop1)]
+vacation_start = vacation_start.iloc[0]
+
+vacation_stop1 = mexico_vacation_df.loc[(mexico_vacation_df["City_ID"] == stop2)]
+vacation_stop1 = vacation_stop1.iloc[0]
+
+vacation_stop2 = mexico_vacation_df.loc[(mexico_vacation_df["City_ID"] == stop3)]
+vacation_stop2 = vacation_stop2.iloc[0]
+
+vacation_stop3 = mexico_vacation_df.loc[(mexico_vacation_df["City_ID"] == end)]
+vacation_stop3 = vacation_stop3.iloc[0]
+
+vacation_end = mexico_vacation_df.loc[(mexico_vacation_df["City_ID"] <= end)]
+vacation_end = vacation_end.iloc[0] 
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/3.1.PNG?raw=true)
 
 
 2. **The latitude and longitude pairs for each of the four cities are retrieved.** 
@@ -482,7 +502,16 @@ Using images from the summary DataFrame and multiple-line chart, describe the di
   
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+start = vacation_start[["Lat", "Lng"]]
+stop1 = vacation_stop1[["Lat", "Lng"]]
+stop2 = vacation_stop2[["Lat", "Lng"]]
+stop3 = vacation_stop3[["Lat", "Lng"]]
+end = vacation_end[["Lat", "Lng"]]
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/3.2.PNG?raw=true)
    
 
 3. **A directions layer map between the cities and the travel map is created and uploaded as `WeatherPy_travel_map.png`.** 
@@ -490,7 +519,33 @@ types:
   
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# 7. Create a direction layer map using the start and end latitude-longitude pairs,
+# and stop1, stop2, and stop3 as the waypoints. The travel_mode should be "DRIVING", "BICYCLING", or "WALKING".
+
+# USING DRIVING MODE!
+
+import gmaps
+import gmaps.datasets
+gmaps.configure(api_key=g_key)
+
+start = (20.7, -105.2)
+stop1 = (17.48, -91.43)
+stop2 = (27.98, -114.06)
+stop3 = (23.17, -97.95)
+end = (30.85, -116.07)
+
+fig = gmaps.figure()
+sart2end_via_stops = gmaps.directions_layer(
+        start, end, waypoints=[stop1, stop2, stop3],
+        travel_mode='DRIVING')
+fig.add_layer(sart2end_via_stops)
+fig
+
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/Images/WeatherPy_travel_map.png?raw=true)
     
 
  4. **A DataFrame that contains the `four` cities on the itinerary is created.** 
@@ -498,42 +553,53 @@ types:
   
 **Code and Image**
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+
+````Python
+# 8. To create a marker layer map between the cities.
+#  Combine the four city DataFrames into one DataFrame using the concat() function.
+
+mexico_vacation_df = pd.concat([mexico_vacation_df],ignore_index=True)
+mexico_vacation_df
+
+# 9 Using the template add city name, the country code, the weather description and maximum temperature for the city. 
+info_box_template = """
+<dl>
+<dt>City</dt><dd>{City}</dd>
+<dt>Country</dt><dd>{Country}</dd>
+<dt>Current Description</dt><dd>{Current Description}</dd>
+<dt>Max Temp</dt><dd>{Max Temp} °F</dd>
+</dl>
+"""
+
+# 10a Get the data from each row and add it to the formatting template and store the data in a list.
+mark_info = [info_box_template.format(**row) for index, row in mexico_vacation_df.iterrows()]
+
+# 10b. Get the latitude and longitude from each row and store in a new DataFrame.
+locations = mexico_vacation_df[["Lat", "Lng"]]
+````
+
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/3.4.PNG?raw=true)
     
- **5. A marker layer map with a pop-up marker for the cities on the itinerary is created, and it is uploaded as `WeatherPy_travel_map_markers.png`. Each marker has the following information:**
+ 5. **A marker layer map with a pop-up marker for the cities on the itinerary is created, and it is uploaded as `WeatherPy_travel_map_markers.png`. Each marker has the following information:**
 
-
-**5.i. Hotel name**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**5.ii. City**
+    1. Hotel name
+    2. City
+    3. Country
+    4. Current weather description with the maximum temperature
 
 > Image with `Jupyter Notebook` & `Python` Code below.
 
-**Code and Image**
+````Python
+# 11a. Add a marker layer for each city to the map.
+city_mark = mexico_vacation_df["City"]
+fig = gmaps.figure(center=(30.0, 31.0), zoom_level=1.5)
+marker_layer = gmaps.marker_layer(locations, info_box_content=mark_info)
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+fig.add_layer(marker_layer)
+fig
+````
 
-**5.iii. Country**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
-
-**5.iv. Current weather description with the maximum temperature**
-
-> Image with `Jupyter Notebook` & `Python` Code below.
-
-**Code and Image**
-
-![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Resources/Images/demo.PNG?raw=true)
+![name-of-you-image](https://github.com/emmanuelmartinezs/World_Weather_Analysis/blob/main/Vacation_Itinerary/Images/WeatherPy_travel_map_markers.png?raw=true)
 
 
 #### World Weather Analysis Completed by Emmanuel Martinez
